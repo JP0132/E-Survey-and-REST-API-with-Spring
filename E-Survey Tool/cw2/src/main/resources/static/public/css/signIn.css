@@ -1,0 +1,307 @@
+*{
+	box-sizing:border-box
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../Assets/Survey-background.png);
+    background-size:cover;
+    background-position: center;
+    font-family: sans-serif;
+    background-attachment: fixed;
+}
+
+.header{
+    padding: 60px;
+  	text-align: center;
+  	color: white;
+  	font-size: 30px;
+  	  
+}
+
+
+#welcome{
+    font-weight: 900;
+    font-size: 27px;
+    color: #0f849e;
+    text-decoration: solid;
+}
+#app{
+    font-weight: 900;
+    font-size: 27px;
+    color: #0f849e;
+}
+
+#info{
+    font-weight: bold;
+    font-size: 14px;
+    color: #7c7c7c;
+}
+
+.loginForm{
+    margin-top: 10px;
+    display: block;
+    overflow: auto;
+    background: #ffffff;
+    opacity: 0.6;
+    box-shadow:0 8px 20px #090909;
+    color: #0f849e;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 20px;
+   	max-width: 400px;
+   	max-height: 800px;
+}
+
+.formTitle{
+    margin: 0;
+    padding: 20px 0px 20px;
+    text-align: center;
+}
+
+.loginForm p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.loginForm input{
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing:border-box;
+}
+
+.loginForm input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 2px solid #0f849e;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #0f849e;
+    font-size: 16px;
+}
+
+.loginForm input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #0f849e;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+
+.loginForm input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ffffff;
+    border: 3px solid #0f849e;
+    color: #0f849e;
+
+  
+
+}
+
+.login-link{
+    text-decoration: none;
+    color: #0a424e;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    
+}
+
+
+.row{
+    display: flex;
+}
+
+.col{
+    padding: 30px;
+}
+
+#reader{
+    width: 300px;
+}
+
+/*The class styles to hide the content*/
+.none{
+    display:none;
+}
+
+/*The class styles to show the content*/
+.block{
+    display: block;
+}
+
+#createAccountForm{
+	height: 100%;
+	width: 500px;
+	margin: auto;
+	margin-bottom: 100px;
+	background: #ffffff;
+    opacity: 0.6;
+    box-shadow:0 8px 20px #090909;
+    padding: 20px;
+    position: relative;
+}
+
+#createAccountForm input{
+	width: 100%;
+    box-sizing:border-box;
+    
+    
+}
+
+.error{
+	display: inline-block;
+	color: red;
+	font-size: 14px;
+}
+
+#createAccountForm input[type="text"], input[type="password"], input[type="date"]{
+    border: none;
+    border-bottom: 2px solid #0f849e;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #0f849e;
+    font-size: 16px;
+}
+
+#createAccountForm  p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 18px;
+    color: #0f849e;
+    margin-top: 20px;
+}
+
+#createAccountForm  input[type="submit"]{
+	margin-top: 20px;
+	margin-bottom: 20px;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #0f849e;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+
+#createAccountForm input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ffffff;
+    border: 3px solid #0f849e;
+    color: #0f849e;
+
+  
+
+}
+.popup-overlay{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    background-color: black;
+    opacity: 0.5;
+    display: none;
+}
+
+.popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 550px;
+    background-color: #ffffff;
+    z-index: 99999;
+    box-shadow:0 8px 20px #090909;;
+}
+
+.popup .popup-close{
+    position: absolute;
+    right: -45px;
+  	top: -35px;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 600;
+   
+    cursor: pointer;
+   
+}
+
+
+
+.inputIcon i {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    bottom: 0;
+   
+    
+}
+  
+.inputIcon {
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+
+}
+  
+.icon {
+    padding: 0px;
+    color: #0f849e;
+    min-width: 50px;
+    font-size: 25px;
+}
+
+.icon:hover {
+    color: #81d2e4;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px; 
+}
+
+
+#qrStart:hover .tooltiptext{
+    cursor: pointer;
+    outline: none;
+    visibility: visible;
+
+}
+
+#errorMessage{
+	color: red;
+	text-align: center;
+	margin-bottom: 10px;
+}
