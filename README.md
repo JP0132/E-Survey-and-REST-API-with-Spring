@@ -1,6 +1,6 @@
 # E-Survey Tool 
 
-## A web application that allows admins to create questions for a survey about their resident. The residents can sign up for the survey to answer the questions. The admins can then review the responses for each question. Also there is a API available to get the question or responses if needed extrenally.  
+## A web application that allows admins to create questions for a survey to learn about the residents. The residents can sign up for the survey to answer the questions. The admins can then review the responses for each question. Also there is a API available to get the question or responses if needed extrenally.  
 
 * Spring framework used for the backend application.  
 * MVC architecture used to create the application.  
